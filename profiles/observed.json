@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "Observed values from one RTX 4090 24GB. Diagnostic data only; this file contains no target values or procedure.",
+  "gpu": {
+    "device_id": "10de:2684",
+    "subsystem_id": "1569:f296",
+    "chip_register": "0x192000a1",
+    "vram_mib": 24564,
+    "vbios_version": "95.02.3c.00.91"
+  },
+  "cold_state": {
+    "ss0": "0x21623137",
+    "ss1": "0x0",
+    "feat_plm": "0xffffff8f",
+    "plm": "0x45cb8f",
+    "wpr2_hi": "0x0",
+    "source_raw": "0x4b8f"
+  },
+  "firmware": {
+    "pci_rom_bytes": 150016,
+    "pci_rom_sha256": "ef9ccd52a8403b90cf300ddd25b6fa9365acacff902ca1028c2c9cc804997a85",
+    "prom_bytes": 631296,
+    "prom_sha256": "4543db946fd57f15d4464b8c23e7beb5a8ec30ea92befa7e1fe43669973c8db7"
+  },
+  "notes": [
+    "These values identify one card and its cold-boot state.",
+    "They are not targets and must not be treated as a compatibility promise.",
+    "ROM/PROM hashes are of the images read back from the card, not files in this repository."
+  ]
+}
