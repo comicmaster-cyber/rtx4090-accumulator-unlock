@@ -1,5 +1,7 @@
 # RTX 4090 24GB FP32-accumulate notes & diagnostics
 
+[한국어](README.ko.md) | English
+
 Measurement and read-only diagnostics for an **RTX 4090 24GB** that exhibits
 **half FP32-accumulate tensor throughput**.
 
@@ -111,4 +113,4 @@ points to upstream.
 - Original code in `tools/`: **MIT** (`LICENSE`)
 - `deps/edk2/MdePkg/Include`: **BSD-2-Clause-Patent** (`LICENSES/`)
 
-Korean: `README.ko.md`, `docs/*.ko.md`, `AGENTS.ko.md`.
+Korean: [`README.ko.md`](README.ko.md), `docs/*.ko.md`, `AGENTS.ko.md`.

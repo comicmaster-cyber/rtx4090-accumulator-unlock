@@ -1,5 +1,7 @@
 # RTX 4090 24GB FP32-accumulate notes & diagnostics
 
+[한국어](README.ko.md) | [English](README.md)
+
 특정 **RTX 4090 24GB**에서 관찰된 **FP32 누산 텐서 처리량 절반** 현상을 측정하고,
 읽기 전용으로 콜드 상태를 캡처하는 진단 도구 모음입니다.
 
@@ -107,4 +109,4 @@ WildFlash1st/cmp90hx-unlock, allurerr/rtx4090-48gb-unlock)을 고정 커밋으�
 - `tools/`의 원본 코드: **MIT** (`LICENSE`)
 - `deps/edk2/MdePkg/Include`: **BSD-2-Clause-Patent** (`LICENSES/`)
 
-영문: `README.en.md`, `docs/*.en.md`, `AGENTS.md`.
+영문: [`README.md`](README.md), `docs/*.en.md`, `AGENTS.md`.
