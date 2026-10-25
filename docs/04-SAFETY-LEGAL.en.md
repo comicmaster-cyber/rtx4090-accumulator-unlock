@@ -14,7 +14,8 @@ The tools in this repository are **read-only diagnostics**.
 - `tools/derive_profile.py`: reads files and computes hashes.
 
 This repository contains **no unlock code, firmware, EFI binaries, asset
-generators, target register values or procedure.** `docs/02` is conceptual only.
+generators or target register values.** `docs/02` is conceptual; `docs/05` is a
+reproduction guide that points to the public upstream.
 
 ## 2. Privacy
 
@@ -55,4 +56,4 @@ generators, target register values or procedure.** `docs/02` is conceptual only.
 - Do not commit firmware, ROM/PROM dumps, EFI binaries or logs.
 - Remove personal and machine-identifying data.
 - Review the legal risk before publishing.
-- Do not extend this repository beyond its diagnostics/documentation scope.
+- Do not add code, firmware or payloads. Keep the reproduction guide in `docs/05`.

@@ -2,8 +2,9 @@
 
 This repository contains **read-only diagnostics and analysis** for an
 RTX 4090 24GB that exhibits reduced FP32-accumulate tensor throughput. It does
-not contain unlock code, firmware, prebuilt EFI binaries, payloads, register
-targets or a step-by-step bypass procedure.
+not contain unlock code, firmware, prebuilt EFI binaries, payloads or register
+targets. `docs/05` is a reproduction guide that points to pinned public upstream
+implementations; no upstream code is copied here.
 
 ## Code license
 
@@ -28,7 +29,8 @@ are used descriptively only.
 
 ## Legal note
 
-The documentation intentionally omits register addresses, target values,
-signature handling and asset-generation recipes. Nothing here is legal advice.
+The reproduction guide intentionally omits register target values, payload
+bytes and signature-patching code; it points to the public upstream for those.
+Nothing here is legal advice.
 Anti-circumvention, export-control and contract rules may apply in your
 jurisdiction; consult a qualified lawyer before publishing or using this work.

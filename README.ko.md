@@ -3,10 +3,10 @@
 특정 **RTX 4090 24GB**에서 관찰된 **FP32 누산 텐서 처리량 절반** 현상을 측정하고,
 읽기 전용으로 콜드 상태를 캡처하는 진단 도구 모음입니다.
 
-> **이 저장소는 언락 도구가 아닙니다.** 펌웨어 변경, 레지스터 쓰기, EFI 빌드,
-> 자산 생성, 단계별 절차를 포함하지 않습니다. 도구는 전부 읽기 전용입니다.
-> 원인에 대한 고수준 설명은 `docs/02`에 있지만, 구현·목표값·절차는 의도적으로
-> 제외했습니다.
+> **이 저장소는 완성된 언락 도구가 아닙니다.** 펌웨어·코드·EFI·페이로드는 포함하지
+> 않습니다. 진단 도구는 읽기 전용이고 `docs/02`는 고수준 설명입니다.
+> **LLM/에이전트용 재현 가이드는 `docs/05`** 에 있으며, 공개 업스트림을 이 카드
+> 프로파일에 맞추는 방법을 설명합니다.
 
 ## 관찰 요약
 
@@ -30,6 +30,7 @@ docs/01-OBSERVATION.ko/en.md    현상·측정 방법·결과
 docs/02-NOTES.ko/en.md          고수준 아키텍처 (구현/절차 없음)
 docs/03-DIAGNOSTICS.ko/en.md    프로브/벤치 사용법
 docs/04-SAFETY-LEGAL.ko/en.md   안전·개인정보·법적 고지
+docs/05-IMPLEMENTATION.ko/en.md ★ LLM/에이전트용 재현 가이드
 profiles/observed.json          관찰된 카드 식별/콜드 상태
 tools/benchmark/accum.cu        raw MMA (f32acc vs f16acc)
 tools/probe/                    AD102-DUMP (읽기 전용 캡처)
@@ -93,6 +94,13 @@ python tools/derive_profile.py DUMP00001.LOG --json > observed.json
 
 기술적 보호조치 우회, 수출통제, EULA 이슈가 적용될 수 있습니다. 이 문서는 법률
 자문이 아니며, 공개/사용 전에 자격 있는 법률 검토를 받으세요.
+
+## 구현 가이드
+
+`docs/05-IMPLEMENTATION.ko.md`는 공개 업스트림(Zagitta/gpu-unlock,
+WildFlash1st/cmp90hx-unlock, allurerr/rtx4090-48gb-unlock)을 고정 커밋으로 받아
+이 카드 프로파일(`profiles/observed.json`)에 맞추는 절차를 설명합니다.
+이 저장소에는 코드/페이로드/EFI가 없으며, 가이드는 업스트림을 가리킵니다.
 
 ## 라이선스
 

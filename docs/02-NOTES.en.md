@@ -1,9 +1,10 @@
 # 02 — Architecture notes (high level)
 
-> This document is a **conceptual explanation**. The repository contains no
-> implementation code, register addresses or target values, signature handling,
-> firmware-asset recipes or step-by-step procedure. Reproduction is the
-> reader's responsibility, and the legal risk must be reviewed separately.
+> This document is a **conceptual explanation**. It contains no implementation
+> code, target values, signature handling or asset recipes. The reproduction
+> procedure is in `docs/05-IMPLEMENTATION.en.md`, which points to the public
+> upstream. Reproduction is the reader's responsibility, and the legal risk
+> must be reviewed separately.
 
 ## 1. What is known
 
@@ -63,8 +64,8 @@ Included:
 Intentionally excluded:
 - firmware execution/authentication code
 - selector/permission write code and target values
-- asset generators, EFI binaries and boot-media builders
-- step-by-step reproduction procedure
+- asset generators, EFI binaries and boot-media builders (the reproduction
+  guide is in `docs/05`)
 
 ## 7. Legal note
 

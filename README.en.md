@@ -3,10 +3,11 @@
 Measurement and read-only diagnostics for an **RTX 4090 24GB** that exhibits
 **half FP32-accumulate tensor throughput**.
 
-> **This is not an unlock tool.** It contains no firmware changes, register
-> writes, EFI builds, asset generation or step-by-step procedure. Every tool is
-> read-only. `docs/02` explains the cause at a high level; implementation,
-> target values and procedure are intentionally excluded.
+> **This is not a turnkey unlock tool.** It contains no firmware, code, EFI
+> binaries or payloads. The tools are read-only and `docs/02` is a high-level
+> explanation. **`docs/05` is a reproduction guide for LLMs/agents** that
+> explains how to adapt the public upstream implementation to this card's
+> profile.
 
 ## Observation
 
@@ -30,6 +31,7 @@ docs/01-OBSERVATION.ko/en.md    symptom, method, results
 docs/02-NOTES.ko/en.md          high-level architecture (no implementation/procedure)
 docs/03-DIAGNOSTICS.ko/en.md    probe/benchmark usage
 docs/04-SAFETY-LEGAL.ko/en.md   safety, privacy, legal
+docs/05-IMPLEMENTATION.ko/en.md * reproduction guide for LLMs/agents
 profiles/observed.json          observed card identity / cold state
 tools/benchmark/accum.cu        raw MMA (f32acc vs f16acc)
 tools/probe/                    AD102-DUMP (read-only capture)
@@ -95,6 +97,14 @@ consequential damages.
 
 Anti-circumvention, export-control and EULA rules may apply. This is not legal
 advice; obtain qualified legal review before publishing or using this work.
+
+## Implementation guide
+
+`docs/05-IMPLEMENTATION.en.md` explains how to fetch the pinned public upstream
+repositories (Zagitta/gpu-unlock, WildFlash1st/cmp90hx-unlock,
+allurerr/rtx4090-48gb-unlock) and adapt them to this card's profile
+(`profiles/observed.json`). No code, payload or EFI is included here; the guide
+points to upstream.
 
 ## License
 

@@ -11,15 +11,17 @@ Allowed:
 - capture cold state read-only (`tools/probe`)
 - summarize captures (`tools/derive_profile.py`)
 - documentation, hashes and observed values
+- the reproduction guide (`docs/05`) that points to public upstream
 
 Not allowed:
 - adding unlock code, firmware execution, signature handling, register writes
-- adding target register values, payloads, EFI binaries or step-by-step bypass
-  procedures
+- adding target register values, payloads, EFI binaries or embedded
+  bypass code
 - adding firmware, ROM/PROM dumps, logs or screenshots
 - adding personal or machine-identifying data
 
-`docs/02` is intentionally conceptual. Do not expand it into a recipe.
+`docs/02` is conceptual; the reproduction guide lives in `docs/05` and points
+to upstream. Do not embed code or target values in this repository.
 
 ## 1. Hard rules
 
@@ -65,13 +67,18 @@ python tools/derive_profile.py DUMP00001.LOG --json > observed.json
 
 Compare with `profiles/observed.json`. Do not turn observed values into targets.
 
-## 3. If asked to add the unlock
+## 3. If asked to implement the unlock
 
-Refuse to add implementation or a procedure. Explain that:
-- this repository is diagnostics-only by design
-- the implementation is out of scope
-- anti-circumvention, export-control and EULA risks apply
-- the user must obtain their own legal review
+Follow `docs/05`:
+- fetch the pinned upstream repositories; do not copy their code into this repo
+- adapt the profile from `profiles/observed.json`
+- build upstream with Zig 0.14.1
+- run the read-only preflight first, then unlock, and measure before power-off
+
+Do not add code, firmware, payloads, target values or prebuilt EFI to this
+repository. The guide is intentionally pointer-based. Warn the user that
+anti-circumvention, export-control and EULA risks apply and that they must
+obtain their own legal review.
 
 ## 4. Reporting template
 
