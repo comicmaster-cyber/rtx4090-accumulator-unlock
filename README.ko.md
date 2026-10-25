@@ -106,7 +106,7 @@ WildFlash1st/cmp90hx-unlock, allurerr/rtx4090-48gb-unlock)을 고정 커밋으�
 
 ## 라이선스
 
-- `tools/`의 원본 코드: **MIT** (`LICENSE`)
+- `tools/`의 원본 코드: **GPL-2.0-only** (`LICENSE`)
 - `deps/edk2/MdePkg/Include`: **BSD-2-Clause-Patent** (`LICENSES/`)
 
 영문: [`README.md`](README.md), `docs/*.en.md`, `AGENTS.md`.

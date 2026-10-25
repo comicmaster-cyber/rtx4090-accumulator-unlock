@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-only
 /* Minimal freestanding memcpy/memset for the EFI probe (no CRT). */
 #include <stddef.h>
 

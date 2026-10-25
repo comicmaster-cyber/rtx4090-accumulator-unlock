@@ -8,7 +8,7 @@ implementations; no upstream code is copied here.
 
 ## Code license
 
-- Original code in `tools/` is licensed under the **MIT License** (see
+- Original code in `tools/` is licensed under **GPL-2.0-only** (see
   `LICENSE`).
 - `deps/edk2/MdePkg/Include` is from TianoCore EDK2, commit
   `c1415771ac592ad8509351c46cd3cda4f38d7d52`, under

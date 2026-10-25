@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: GPL-2.0-only
 """Summarize a read-only AD102-DUMP capture.
 
 The probe writes DUMPxxxxx.LOG, ROMxxxxx.BIN and PROMxxxxx.BIN. This script

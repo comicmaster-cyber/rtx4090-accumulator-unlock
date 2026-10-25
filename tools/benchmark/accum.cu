@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0-only
 // Compare raw mma.sync throughput by accumulator type.
 // Build: nvcc -O3 -std=c++17 -arch=sm_89 accum.cu -o accum
 // The decisive number is f32acc vs f16acc. In the reduced state f32acc is

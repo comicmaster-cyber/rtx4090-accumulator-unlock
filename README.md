@@ -110,7 +110,7 @@ points to upstream.
 
 ## License
 
-- Original code in `tools/`: **MIT** (`LICENSE`)
+- Original code in `tools/`: **GPL-2.0-only** (`LICENSE`)
 - `deps/edk2/MdePkg/Include`: **BSD-2-Clause-Patent** (`LICENSES/`)
 
 Korean: [`README.ko.md`](README.ko.md), `docs/*.ko.md`, `AGENTS.ko.md`.

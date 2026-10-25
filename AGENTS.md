@@ -110,5 +110,5 @@ deps/edk2/MdePkg/Include  pinned EDK2 headers (BSD)
 
 ## 6. License
 
-Original code is MIT. EDK2 headers are BSD-2-Clause-Patent. No NVIDIA firmware
+Original code is GPL-2.0-only. EDK2 headers are BSD-2-Clause-Patent. No NVIDIA firmware
 is included. Not affiliated with NVIDIA.

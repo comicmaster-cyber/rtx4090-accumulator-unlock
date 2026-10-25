@@ -103,5 +103,5 @@ deps/edk2/MdePkg/Include  고정 EDK2 헤더 (BSD)
 
 ## 6. 라이선스
 
-원본 코드는 MIT. EDK2 헤더는 BSD-2-Clause-Patent. NVIDIA 펌웨어 미포함.
+원본 코드는 GPL-2.0-only. EDK2 헤더는 BSD-2-Clause-Patent. NVIDIA 펌웨어 미포함.
 NVIDIA와 무관합니다.
